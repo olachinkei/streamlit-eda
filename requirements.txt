@@ -20,6 +20,7 @@ commonmark==0.9.1
 cycler==0.11.0
 debugpy==1.6.0
 decorator==5.1.1
+dtale==3.3.0
 defusedxml==0.7.1
 entrypoints==0.4
 et-xmlfile==1.1.0
