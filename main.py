@@ -75,7 +75,7 @@ if uploaded_file is not None:
             #report_file = codecs.open("EDA.html",'r')
             #page = report_file.read()
             #components.html(page, width=1000,height=1000, scrolling=True)
-            dtale_app = dtale.show(data)
+            dtale_app = dtale.show(df)
             st.write(dtale_app)
 
     
