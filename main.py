@@ -1,4 +1,5 @@
 #モジュールのインポート
+!pip install pandas==1.5.0
 import streamlit as st
 import streamlit.components.v1 as components
 import numpy as np
