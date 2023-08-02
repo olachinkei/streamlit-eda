@@ -106,7 +106,7 @@ sortedcontainers==2.4.0
 soupsieve==2.3.2.post1
 stack-data==0.2.0
 statsmodels==0.13.2
-streamlit==1.25.0
+streamlit==1.23.0
 sweetviz==2.1.4
 tblib==1.7.0
 tenacity==8.0.1
