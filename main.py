@@ -18,7 +18,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import math
 from base64 import b64encode
-
+import dtale
 
 
 # タイトルを表示
@@ -69,13 +69,13 @@ if uploaded_file is not None:
             df[target] = df[target].astype("float64")
 
         with st.spinner('実行中...'):            
-            feature_config = sv.FeatureConfig(skip=[], force_num = [],force_cat=[],force_text=[])
-            my_report = sv.analyze(df, target_feat= target,feat_cfg=feature_config, pairwise_analysis="on")
-            my_report.show_html("EDA.html")
-            report_file = codecs.open("EDA.html",'r')
-            page = report_file.read()
-            components.html(page, width=1000,height=1000, scrolling=True)
-            #dtale_app = dtale.show(data)
-            #st.write(dtale_app)
+            #feature_config = sv.FeatureConfig(skip=[], force_num = [],force_cat=[],force_text=[])
+            #my_report = sv.analyze(df, target_feat= target,feat_cfg=feature_config, pairwise_analysis="on")
+            #my_report.show_html("EDA.html")
+            #report_file = codecs.open("EDA.html",'r')
+            #page = report_file.read()
+            #components.html(page, width=1000,height=1000, scrolling=True)
+            dtale_app = dtale.show(data)
+            st.write(dtale_app)
 
     
